@@ -1,93 +1,96 @@
-// CANDIDATE PROFILE — For UN Secretary-General Election
+// DR. KHALILUR RAHMAN — Foreign Minister of Bangladesh
 export const secretaryData = {
     name: "Dr. Khalilur Rahman",
-    title: "Candidate for UN Secretary-General",
+    title: "Foreign Minister of Bangladesh",
     ministry: "Ministry of Foreign Affairs",
     country: "People's Republic of Bangladesh",
-    appointmentDate: "Electoral Session 2026-2027",
-    photo: null,
+    appointmentDate: "17 February 2026",
+    photo: "/Dr. Khalilur Rahman.jpeg",
     linkedin: "https://linkedin.com",
     twitter: "https://x.com",
     facebook: "https://facebook.com",
     youtube: "https://youtube.com",
     biography: [
-        "Dr. Khalilur Rahman is a globally recognized diplomat, visionary leader, and currently a prominent candidate for the position of Secretary-General of the United Nations. With a career spanning over 35 years in international relations, he has served as the Foreign Secretary of Bangladesh and represented the Global South in the most critical multilateral forums of our time.",
-        "A bridge-builder by nature, Dr. Rahman has been at the center of high-stakes mediation efforts, from resolving complex regional conflicts to forging international consensus on the Climate Justice framework. His unique perspective—hailing from a nation that has transitioned from a vulnerable state to a global development model—provides him with the empathy and strategic clarity required to lead the United Nations into its next chapter.",
-        "Throughout his diplomatic journey, he has been a tireless advocate for UN reform, demanding a more inclusive, transparent, and effective world body. He envisions a United Nations that is not only a venue for dialogue but a powerhouse for action—addressing the root causes of conflict, inequality, and the climate crisis with unprecedented urgency.",
+        "Dr. Khalilur Rahman was sworn in as the Foreign Minister of Government of Bangladesh on 17 February 2026. He previously served as National Security Adviser and High Representative for the Rohingya Issue in the Interim Government of Bangladesh.",
+        "Dr. Rahman joined diplomatic service of Bangladesh in 1979 upon securing the first position in the first regular Bangladesh Civil Service examination held in 1977. In the same year, he stood first class first in MA examinations in Economics at the Dhaka University. During 1980-83, he studied at the Fletcher School of Law and Diplomacy, Tufts University and the Kennedy School of Government, Harvard University, and earned the degrees of MA in Law and Diplomacy, and PhD in Economics.",
+        "During 1983-1991, he served at the Ministry of Foreign Affairs and at the Permanent Mission of Bangladesh to the United Nations in New York. He represented Bangladesh at the Economic and Financial Committee of the UN General Assembly. He was also the spokesperson of the Least Developed Countries (LDCs) and aide to the President of the 41st session of the UN General Assembly.",
+        "Dr. Rahman joined the United Nations secretariat in 1991 as Special Adviser at the UN Conference on Trade and Development (UNCTAD) in Geneva. During the ensuing 25 years at the UN, he held senior positions in the United Nations in New York and Geneva, and was a lead author of and substantive contributor to major UN flagship publications.",
+        "Dr. Rahman is a founder of the East West University in Dhaka and served as a member on its Board of Trustees until November 2024 when he was appointed as the High Representative on the Rohingya Issue, and subsequently as National Security Adviser.",
+        "He is married and has two daughters and four grandchildren.",
     ],
     vision: [
         {
-            title: "Inclusive Multilateralism",
-            description: "Reforming the UN Security Council and decision-making bodies to reflect 21st-century realities, ensuring the voices of developing nations and small states are central to global governance.",
+            title: "Principled Diplomacy",
+            description: "Bangladesh's foreign policy is grounded in the constitutional commitment of friendship to all and malice to none — pursuing peace and justice through multilateral engagement.",
             icon: "globe"
         },
         {
-            title: "Global Climate Solidarity",
-            description: "Establishing a binding 'Climate Justice' mechanism that ensures historical emitters fulfill their financial and technology transfer commitments to climate-vulnerable populations.",
-            icon: "leaf"
+            title: "Rohingya Crisis Resolution",
+            description: "As former High Representative for the Rohingya Issue, Dr. Rahman leads Bangladesh's efforts to find a durable, dignified, and voluntary repatriation solution for over 1.2 million displaced Rohingya.",
+            icon: "shield"
         },
         {
-            title: "Digital Equity & AI Governance",
-            description: "Bridging the global digital divide and creating a UN-led ethical framework for Artificial Intelligence to ensure technology serves humanity's collective progress.",
+            title: "Economic Diplomacy",
+            description: "Leveraging decades of experience at UNCTAD and the UN, Dr. Rahman champions trade-led development, debt relief, and fair economic governance for developing nations.",
             icon: "cpu"
         },
         {
-            title: "Conflict Transformation",
-            description: "Transitioning from traditional peacekeeping to proactive 'Peace Engineering'—addressing socio-economic grievances before they escalate into armed conflict.",
-            icon: "shield"
+            title: "Climate Justice",
+            description: "Advocating for binding climate finance commitments from major emitters to protect vulnerable nations like Bangladesh that bear a disproportionate burden of climate change.",
+            icon: "leaf"
         }
     ],
     credentials: [
-        { label: "UN SG Candidate", icon: "user-check" },
-        { label: "Global South Advocate", icon: "globe" },
-        { label: "Mediation Expert", icon: "handshake" },
+        { label: "PhD in Economics, Harvard University", icon: "user-check" },
+        { label: "25 Years at the United Nations", icon: "globe" },
+        { label: "Founder, East West University", icon: "handshake" },
     ],
     achievements: [
         {
             number: "01",
-            title: "Architect of the 'Summit of the Future' Reform",
-            description: "Played a pivotal role in drafting the Pact for the Future, securing consensus among over 190 nations on the most comprehensive UN reform agenda in decades.",
+            title: "First in Bangladesh Civil Service Exam (1977)",
+            description: "Secured the first position in the first regular Bangladesh Civil Service examination and simultaneously graduated first class first in MA Economics from Dhaka University.",
         },
         {
             number: "02",
-            title: "Global Peacekeeping Leadership",
-            description: "Commanded the world's largest troop contribution to UN Peacekeeping, pioneering the 'Women, Peace and Security' agenda across deployment theaters.",
+            title: "MA & PhD from Harvard & Tufts (1983)",
+            description: "Earned MA in Law and Diplomacy from the Fletcher School of Law and Diplomacy, Tufts University, and a PhD in Economics from Harvard University's Kennedy School of Government.",
         },
         {
             number: "03",
-            title: "Founder of the Climate Vulnerable Forum (CVF)",
-            description: "Conceptualized and launched the CVF, uniting 58 countries to demand immediate and fair climate action from the world's major economies.",
+            title: "UN LDC Spokesperson (1983–1991)",
+            description: "Served as spokesperson for the Least Developed Countries (LDCs) at the UN General Assembly and aide to the President of the 41st session of the UNGA.",
         },
         {
             number: "04",
-            title: "High-Level Mediation in South-East Asia",
-            description: "Successfully mediated track-two diplomatic talks that led to a significant de-escalation of border tensions and humanitarian gridlocks in the sub-region.",
+            title: "25 Years at the United Nations",
+            description: "Held senior positions at UNCTAD Geneva and the United Nations in New York from 1991–2016, authoring and contributing to major UN flagship publications.",
         },
         {
             number: "05",
-            title: "Transition to Digital Diplomacy",
-            description: "Led the first 'Virtual UNGA' during the global pandemic, ensuring the continuity of international governance during the world's most restrictive lockdowns.",
+            title: "Founder of East West University",
+            description: "Co-founded the East West University in Dhaka, serving as a member on its Board of Trustees until November 2024 — a lasting contribution to higher education in Bangladesh.",
         },
         {
             number: "06",
-            title: "Advocacy for Debt Relief",
-            description: "Secured a landmark UN resolution on sovereign debt restructuring, providing fiscal space for 40+ low-income countries to invest in Sustainable Development Goals.",
+            title: "Foreign Minister of Bangladesh (2026)",
+            description: "Sworn in as Foreign Minister on 17 February 2026, having previously served as National Security Adviser and High Representative for the Rohingya Issue.",
         },
     ],
     speeches: [
-        { date: "2026-03-10", title: "My Vision for a Renewed UN: Official Candidacy Address", event: "UN General Assembly Hall", type: "un_speeches" },
-        { date: "2026-01-15", title: "Bridging the Divide: A New Charter for Multilateralism", event: "London Institute of Diplomacy", type: "policy" },
-        { date: "2025-12-10", title: "Climate Justice is Human Justice", event: "COP29 Plenary Session", type: "un_speeches" },
-        { date: "2025-09-23", title: "Artificial Intelligence: A Global Public Good", event: "UN Summit of the Future", type: "policy" },
-        { date: "2025-06-05", title: "Empowering the Global South in the 21st Century", event: "African Union Summit", type: "publications" },
-        { date: "2024-11-14", title: "The Case for a More Democratic Security Council", event: "Foreign Affairs Journal", type: "publications" },
+        { date: "2026-02-17", title: "Inaugural Address as Foreign Minister of Bangladesh", event: "Government of Bangladesh, Dhaka", type: "un_speeches" },
+        { date: "2025-11-15", title: "Rohingya Repatriation: A Path Forward", event: "UN General Assembly Side Event, New York", type: "un_speeches" },
+        { date: "2025-09-22", title: "Statement at the 80th UNGA Session", event: "United Nations General Assembly", type: "un_speeches" },
+        { date: "2025-03-10", title: "National Security and Foreign Policy Alignment", event: "Bangladesh Institute of International Affairs", type: "policy" },
+        { date: "2024-12-12", title: "Climate Vulnerability and Bangladesh's Diplomatic Stance", event: "COP29 High-Level Segment", type: "policy" },
+        { date: "2024-05-20", title: "25 Years in the UN System: Lessons in Multilateralism", event: "East West University, Dhaka", type: "publications" },
     ],
     mandate: [
-        "Advocating for a comprehensive reform of the United Nations Security Council",
-        "Championing the rights and representation of the 134 member states of the G77 + China",
-        "Promoting global peace through the lens of social justice and economic equity",
-        "Bridging the gap between the developed North and the developing Global South",
-        "Ensuring the United Nations is fit-for-purpose in the age of AI and climate crisis",
-        "Upholding the UN Charter as the primary framework for international law and peace",
+        "Steering Bangladesh's foreign policy under the Interim Government with integrity and vision",
+        "Leading international efforts for a dignified, voluntary and sustainable solution to the Rohingya crisis",
+        "Advancing economic diplomacy to support Bangladesh's LDC graduation and trade interests",
+        "Championing global climate justice and securing finance for climate-vulnerable nations",
+        "Strengthening Bangladesh's bilateral relationships and multilateral standing",
+        "Upholding the founding principles of Bangladesh's Constitution in international affairs",
     ],
 };

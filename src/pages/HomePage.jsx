@@ -48,7 +48,7 @@ export default function HomePage() {
                 <div className="container-main" style={{ position: 'relative', zIndex: 3, padding: '8rem 1.5rem 4rem' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) 1.5fr', gap: '4rem', alignItems: 'center' }}>
                         <motion.div variants={itemVariants} style={{ borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', border: '8px solid white' }}>
-                            <img src="/dr_rahman.jpg" alt="Dr. Khalilur Rahman" style={{ width: '100%', height: 'auto', display: 'block' }} onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800'; }} />
+                            <img src="/Dr. Khalilur Rahman.jpeg" alt="Dr. Khalilur Rahman" style={{ width: '100%', height: 'auto', display: 'block' }} onError={(e) => { e.target.src = '/Khalilur_Rahman_(economist)_2025.jpg'; }} />
                         </motion.div>
 
                         <motion.div variants={itemVariants}>

@@ -73,9 +73,10 @@ export default function SecretaryPage() {
                                     position: 'relative'
                                 }}>
                                     <img
-                                        src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600&h=750"
-                                        alt="Portrait"
-                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                        src="/Dr. Khalilur Rahman.jpeg"
+                                        alt="Dr. Khalilur Rahman, Foreign Minister of Bangladesh"
+                                        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
+                                        onError={(e) => { e.target.src = '/Khalilur_Rahman_(economist)_2025.jpg'; }}
                                     />
                                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 30%)' }} />
                                 </div>
@@ -115,7 +116,7 @@ export default function SecretaryPage() {
                         >
                             <div style={{ marginBottom: '1rem' }}>
                                 <span style={{ fontFamily: 'var(--font-ui)', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--color-gold)', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
-                                    United Nations Election 2026-2027
+                                    Ministry of Foreign Affairs, Bangladesh
                                 </span>
                             </div>
                             <h1 style={{
@@ -212,7 +213,7 @@ export default function SecretaryPage() {
                 <div className="container-main">
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'clamp(3rem, 10vw, 8rem)', alignItems: 'start' }}>
                         <div>
-                            <SectionHeader title="Candidate Biography" subtitle="The Journey" />
+                            <SectionHeader title="Biography" subtitle="The Journey" />
                             {secretaryData.biography.map((para, i) => (
                                 <p key={i} className={i === 0 ? 'drop-cap' : ''} style={{ fontFamily: 'var(--font-body)', fontSize: '1.05rem', lineHeight: 1.85, color: 'var(--color-text-secondary)', marginBottom: '1.5rem' }}>
                                     {para}
@@ -220,7 +221,7 @@ export default function SecretaryPage() {
                             ))}
                         </div>
                         <div>
-                            <SectionHeader title="Vision for the Renewed UN" subtitle="The Future" />
+                            <SectionHeader title="Vision & Foreign Policy" subtitle="The Future" />
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1rem' }}>
                                 {secretaryData.vision.map((v, i) => (
                                     <motion.div
@@ -251,27 +252,24 @@ export default function SecretaryPage() {
                             viewport={{ once: true }}
                             style={{ position: 'relative', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-2xl)', border: '1px solid rgba(255,255,255,0.1)' }}
                         >
-                            <div style={{ aspectRatio: '16/9', background: '#000', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
-                                {/* Video Play Button Overlay */}
-                                <div style={{ width: '70px', height: '70px', borderRadius: '50%', background: 'var(--color-gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingLeft: '5px', boxShadow: '0 0 30px rgba(200,169,81,0.5)' }}>
-                                    <div style={{ width: 0, height: 0, borderTop: '12px solid transparent', borderBottom: '12px solid transparent', borderLeft: '20px solid var(--color-primary)' }} />
-                                </div>
-                                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6))' }} />
-                                <p style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', fontFamily: 'var(--font-ui)', fontWeight: 600, color: 'white', margin: 0, fontSize: '0.85rem' }}>
-                                    Vision Statement 2026: The New Multilateralism
-                                </p>
+                            <div style={{ aspectRatio: '16/9', background: '#000', position: 'relative' }}>
+                                <iframe
+                                    src="https://www.youtube.com/embed/xy2kRkcn-rc?rel=0&showinfo=0"
+                                    title="Bangladesh — Our Nation"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
+                                />
                             </div>
                         </motion.div>
-                        <div>
-                            <span style={{ fontFamily: 'var(--font-ui)', color: 'var(--color-gold)', fontWeight: 700, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.15em', display: 'block', marginBottom: '1rem' }}>Video Spotlight</span>
-                            <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', lineHeight: 1.2 }}>Leadership Address</h2>
-                            <p style={{ fontFamily: 'var(--font-body)', fontSize: '1.1rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, marginBottom: '2rem' }}>
-                                Watch the official candidacy announcement where H.E. outlines the strategic roadmap for a more inclusive and effective United Nations.
-                            </p>
-                            <div style={{ display: 'flex', gap: '1rem' }}>
-                                <button className="btn btn-gold" style={{ padding: '0.8rem 2rem' }}>Play Vision Video</button>
-                                <button className="btn btn-outline-white" style={{ padding: '0.8rem 2rem' }}>Read Transcript</button>
-                            </div>
+                        <span style={{ fontFamily: 'var(--font-ui)', color: 'var(--color-gold)', fontWeight: 700, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.15em', display: 'block', marginBottom: '1rem' }}>Video Spotlight</span>
+                        <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', lineHeight: 1.2 }}>Bangladesh — Our Nation</h2>
+                        <p style={{ fontFamily: 'var(--font-body)', fontSize: '1.1rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.8, marginBottom: '2rem' }}>
+                            A glimpse into the beautiful landscape, culture, and people of Bangladesh — the nation Dr. Khalilur Rahman proudly represents on the world stage.
+                        </p>
+                        <div style={{ display: 'flex', gap: '1rem' }}>
+                            <button className="btn btn-gold" style={{ padding: '0.8rem 2rem' }}>Play Vision Video</button>
+                            <button className="btn btn-outline-white" style={{ padding: '0.8rem 2rem' }}>Read Transcript</button>
                         </div>
                     </div>
                 </div>
