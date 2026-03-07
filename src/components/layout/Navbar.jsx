@@ -9,7 +9,6 @@ import { motion } from 'framer-motion';
 const navLinks = [
     { to: '/', key: 'nav.home', exact: true },
     { to: '/mission', key: 'nav.mission' },
-    { to: '/delegation', key: 'nav.delegation' },
     { to: '/contributions', key: 'nav.contributions' },
     { to: '/news', key: 'nav.news' },
     { to: '/contact', key: 'nav.contact' },
