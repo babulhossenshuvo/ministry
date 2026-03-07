@@ -1,0 +1,32 @@
+/* RTL Layout Overrides for Arabic */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .rtl-flip {
+    transform: scaleX(-1);
+}
+
+[dir="rtl"] .container-main,
+[dir="rtl"] .container-narrow {
+    direction: rtl;
+}
+
+[dir="rtl"] .section-heading-line::after {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+[dir="rtl"] .drop-cap::first-letter {
+    float: right;
+    margin-right: 0;
+    margin-left: 0.1em;
+}
+
+[dir="rtl"] .timeline-item {
+    text-align: right;
+}
+
+[dir="rtl"] .breadcrumb {
+    flex-direction: row-reverse;
+}

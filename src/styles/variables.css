@@ -1,0 +1,82 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #006A4E;
+  --color-primary-dark: #004D38;
+  --color-primary-light: #008C67;
+  --color-primary-muted: #E8F5F0;
+
+  /* Accent Colors */
+  --color-gold: #C8A951;
+  --color-gold-light: #E8D28A;
+
+  /* Navy */
+  --color-navy: #1A2A4A;
+  --color-navy-light: #2E4170;
+
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-ivory: #F7F3EC;
+  --color-ivory-dark: #EDE7D9;
+
+  /* Text */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #718096;
+
+  /* Borders */
+  --color-border: #D4C9B0;
+  --color-border-dark: #B0A898;
+
+  /* Status */
+  --color-error: #C0392B;
+  --color-success: #27AE60;
+  --color-warning: #F39C12;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lora', 'Times New Roman', serif;
+  --font-ui: 'DM Sans', system-ui, sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.10);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.15);
+  --shadow-green: 0 4px 20px rgba(0, 106, 78, 0.25);
+  --shadow-gold: 0 4px 20px rgba(200, 169, 81, 0.30);
+
+  /* Layout */
+  --navbar-height: 80px;
+  --logobar-height: 52px;
+}
+
+/* Dark mode overrides */
+[data-theme="dark"] {
+  --color-ivory: #1A1A1A;
+  --color-ivory-dark: #242424;
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #A0AEC0;
+  --color-text-muted: #718096;
+  --color-border: #2D3748;
+  --color-border-dark: #4A5568;
+  --color-white: #1E1E1E;
+}

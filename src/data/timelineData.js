@@ -1,0 +1,9 @@
+// PLACEHOLDER — Replace before production
+export const timelineData = [
+    { year: "2024–Present", role: "Foreign Secretary", organization: "Ministry of Foreign Affairs, Bangladesh", description: "Serving as the Chief of Bangladesh Foreign Service, leading diplomatic initiatives at the UN and bilateral engagements globally.", side: "right" },
+    { year: "2020–2024", role: "Bangladesh Permanent Representative to the UN", organization: "United Nations, New York", description: "Represented Bangladesh at all UN bodies including the General Assembly, Security Council, and ECOSOC. Led Bangladesh's election campaign to the Security Council.", side: "left" },
+    { year: "2016–2020", role: "Secretary, Multilateral Economic Affairs", organization: "Ministry of Foreign Affairs, Bangladesh", description: "Coordinated Bangladesh's positions in international economic forums including the WTO, G20, and UNCTAD. Spearheaded LDC graduation strategy.", side: "right" },
+    { year: "2012–2016", role: "Ambassador to Belgium and the EU", organization: "Embassy of Bangladesh, Brussels", description: "Managed Bangladesh's diplomatic relations with Belgium and the European Union, advancing trade, development cooperation, and political dialogue.", side: "left" },
+    { year: "2008–2012", role: "Minister, Bangladesh High Commission", organization: "Bangladesh High Commission, London", description: "Led consular and political affairs at the Bangladesh High Commission in London, strengthening Bangladesh-UK bilateral ties.", side: "right" },
+    { year: "2002–2008", role: "Director, UN Political Wing", organization: "Ministry of Foreign Affairs, Bangladesh", description: "Managed Bangladesh's multilateral affairs portfolio, coordinating positions for UN General Assembly sessions and Security Council campaigns.", side: "left" },
+];
