@@ -38,7 +38,7 @@ export default function NewsPage() {
                 overflow: 'hidden'
             }}>
                 <iframe
-                    src="https://www.youtube.com/embed/To7HyoTkF5c?autoplay=1&mute=1&controls=0&loop=1&playlist=To7HyoTkF5c&showinfo=0&rel=0&playsinline=1"
+                    src="https://www.youtube.com/embed/To7HyoTkF5c?autoplay=1&mute=1&controls=0&loop=1&playlist=To7HyoTkF5c&showinfo=0&rel=0&playsinline=1&start=20"
                     allow="autoplay; encrypted-media"
                     style={{
                         position: 'absolute',

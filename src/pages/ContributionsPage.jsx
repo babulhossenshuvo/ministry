@@ -35,7 +35,7 @@ export default function ContributionsPage() {
                 overflow: 'hidden'
             }}>
                 <iframe
-                    src="https://www.youtube.com/embed/kjgBccv8DP0?autoplay=1&mute=1&controls=0&loop=1&playlist=kjgBccv8DP0&showinfo=0&rel=0&playsinline=1"
+                    src="https://www.youtube.com/embed/kjgBccv8DP0?autoplay=1&mute=1&controls=0&loop=1&playlist=kjgBccv8DP0&showinfo=0&rel=0&playsinline=1&start=60"
                     allow="autoplay; encrypted-media"
                     style={{
                         position: 'absolute',

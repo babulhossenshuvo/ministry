@@ -55,24 +55,15 @@ export default function MissionPage() {
                 position: 'relative',
                 overflow: 'hidden'
             }}>
-                <iframe
-                    src="https://www.youtube.com/embed/To7HyoTkF5c?autoplay=1&mute=1&controls=0&loop=1&playlist=To7HyoTkF5c&showinfo=0&rel=0&playsinline=1"
-                    allow="autoplay; encrypted-media"
-                    style={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        width: '100vw',
-                        height: '56.25vw',
-                        minHeight: '100vh',
-                        minWidth: '177.77vh',
-                        transform: 'translate(-50%, -50%)',
-                        pointerEvents: 'none',
-                        zIndex: 0,
-                        opacity: 0.8
-                    }}
-                    frameBorder="0"
-                />
+                <div style={{
+                    position: 'absolute',
+                    inset: 0,
+                    backgroundImage: 'url("/army Un.jpg")',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    zIndex: 0,
+                    opacity: 0.8
+                }} />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 40%, rgba(0,0,0,0.7) 100%)', zIndex: 1 }} />
                 <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(200,169,81,0.3) 0%, transparent 65%)', zIndex: 1, pointerEvents: 'none' }} />
                 <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
