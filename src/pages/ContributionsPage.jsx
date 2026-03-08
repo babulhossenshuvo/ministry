@@ -52,8 +52,8 @@ export default function ContributionsPage() {
                     }}
                     frameBorder="0"
                 />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 40%, rgba(0,0,0,0.7) 100%)', zIndex: 1 }} />
-                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(200,169,81,0.3) 0%, transparent 65%)', zIndex: 1, pointerEvents: 'none' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,25,20,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,25,20,0.9) 100%)', zIndex: 1 }} />
+                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(0,106,78,0.5) 0%, transparent 65%)', zIndex: 1, pointerEvents: 'none', mixBlendMode: 'screen' }} />
                 <div style={{ position: 'relative', zIndex: 1, maxWidth: '1280px', width: '100%', margin: '0 auto' }}>
                     <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white', fontWeight: 800, margin: 0, textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
                         {t('contributions.page_title')}

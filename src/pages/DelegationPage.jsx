@@ -46,8 +46,8 @@ export default function DelegationPage() {
                     opacity: 0.45,
                     mixBlendMode: 'luminosity'
                 }} />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,25,20,0.85) 0%, rgba(0,0,0,0.5) 50%, rgba(0,25,20,0.95) 100%)', zIndex: 1 }} />
-                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(200,169,81,0.3) 0%, transparent 65%)', zIndex: 1, pointerEvents: 'none' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,25,20,0.9) 0%, rgba(0,0,0,0.5) 50%, rgba(0,25,20,0.95) 100%)', zIndex: 1 }} />
+                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(0,106,78,0.5) 0%, transparent 65%)', zIndex: 1, pointerEvents: 'none', mixBlendMode: 'screen' }} />
                 <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
                     <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', color: 'white', fontWeight: 800, margin: '0 0 1rem', textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
                         {t('delegation.page_title')}
