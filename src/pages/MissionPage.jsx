@@ -63,8 +63,9 @@ export default function MissionPage() {
                         top: '50%',
                         left: '50%',
                         width: '100vw',
-                        height: '100vw',
+                        height: '56.25vw',
                         minHeight: '100vh',
+                        minWidth: '177.77vh',
                         transform: 'translate(-50%, -50%)',
                         pointerEvents: 'none',
                         zIndex: 0,
@@ -72,7 +73,8 @@ export default function MissionPage() {
                     }}
                     frameBorder="0"
                 />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.6) 100%)', zIndex: 1 }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 40%, rgba(0,0,0,0.7) 100%)', zIndex: 1 }} />
+                <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', height: '100%', background: 'radial-gradient(ellipse at center, rgba(200,169,81,0.3) 0%, transparent 65%)', zIndex: 1, pointerEvents: 'none' }} />
                 <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
                     <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white', fontWeight: 800, margin: '0 0 1.5rem', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
                         {t('mission.page_title')}
