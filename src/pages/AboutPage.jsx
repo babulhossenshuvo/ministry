@@ -102,8 +102,8 @@ export default function AboutPage() {
                             </table>
                         </div>
                         {/* Description & Shorts Animation */}
-                        <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
-                            <div style={{ flex: 1, minWidth: '300px' }}>
+                        <div style={{ display: 'flex', gap: '2.5rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+                            <div style={{ flex: '1 1 300px' }}>
                                 {/* PLACEHOLDER — Replace before production */}
                                 <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--color-text-secondary)', lineHeight: 1.85, marginBottom: '1.5rem' }}>
                                     The People's Republic of Bangladesh, located in South Asia at the head of the Bay of Bengal, is one of the world's most densely populated nations and a rising power in the developing world. Since gaining independence on December 16, 1971, Bangladesh has made remarkable strides in economic development, poverty reduction, and human development, emerging as a model for the developing world.
@@ -116,11 +116,11 @@ export default function AboutPage() {
                                 </p>
                             </div>
                             {/* Animation / Shorts Embedded */}
-                            <div style={{ width: '240px', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', flexShrink: 0 }}>
+                            <div style={{ width: '100%', maxWidth: '280px', margin: '0 auto', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', flexShrink: 0, aspectRatio: '9/16' }}>
                                 <iframe
                                     src="https://www.youtube.com/embed/XdCynE_EAhI?autoplay=1&mute=1&controls=0&loop=1&playlist=XdCynE_EAhI&showinfo=0&rel=0&playsinline=1"
                                     allow="autoplay; encrypted-media"
-                                    style={{ width: '240px', height: '426px', border: 'none', pointerEvents: 'none' }}
+                                    style={{ width: '100%', height: '100%', border: 'none', pointerEvents: 'none' }}
                                 />
                             </div>
                         </div>
