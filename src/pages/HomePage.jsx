@@ -91,17 +91,16 @@ function DemoOne() {
             <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, background: 'linear-gradient(to bottom,transparent 5%,var(--color-gold) 40%,var(--color-gold) 60%,transparent 95%)', zIndex: 2, opacity: 0.85 }} />
 
             {/* CONTENT */}
-            <div style={{ position: 'relative', zIndex: 3, width: '100%', maxWidth: 1200, padding: '8rem 2rem 5rem', display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) minmax(280px, 450px)', gap: '4rem', alignItems: 'center' }}>
+            <div className="hero-grid hero-grid-one hero-align-left">
 
                 {/* LEFT SIDE TEXT */}
                 <motion.div
                     initial="hidden"
                     animate="visible"
                     variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.13 } } }}
-                    style={{ textAlign: 'left' }}
                 >
                     {/* Logos */}
-                    <motion.div variants={fadeUp} custom={0} style={{ display: 'flex', marginBottom: '2rem' }}>
+                    <motion.div variants={fadeUp} custom={0} className="flex-center-mobile" style={{ display: 'flex', marginBottom: '2rem' }}>
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '1.25rem', padding: '0.7rem 1.5rem', background: 'rgba(255,255,255,0.07)', backdropFilter: 'blur(16px)', borderRadius: 'var(--radius-xl)', border: '1px solid rgba(200,169,81,0.3)', boxShadow: '0 8px 32px rgba(0,0,0,0.3)' }}>
                             <img src="/logos/bd-govt.png" alt="Bangladesh Government" style={{ height: 46, width: 'auto' }} />
                             <div style={{ width: 1, height: 30, background: 'rgba(255,255,255,0.2)' }} />
@@ -115,12 +114,12 @@ function DemoOne() {
                     </motion.div>
 
                     {/* Heading */}
-                    <motion.h1 variants={fadeUp} custom={1} style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(3rem,6vw,5.5rem)', color: 'white', fontWeight: 900, lineHeight: 1.05, margin: '0 0 1rem', textShadow: '0 4px 40px rgba(0,0,0,0.6)', letterSpacing: '-0.02em' }}>
+                    <motion.h1 variants={fadeUp} custom={1} className="hero-title" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(3rem,6vw,5.5rem)', color: 'white', fontWeight: 900, lineHeight: 1.05, margin: '0 0 1rem', textShadow: '0 4px 40px rgba(0,0,0,0.6)', letterSpacing: '-0.02em' }}>
                         Dr. Khalilur Rahman
                     </motion.h1>
 
                     {/* Gold divider */}
-                    <motion.div variants={fadeUp} custom={2} style={{ display: 'flex', alignItems: 'center', gap: '1rem', margin: '1.25rem 0' }}>
+                    <motion.div variants={fadeUp} custom={2} className="flex-center-mobile" style={{ display: 'flex', alignItems: 'center', gap: '1rem', margin: '1.25rem 0' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
                             <div style={{ width: 5, height: 5, borderRadius: '50%', background: 'var(--color-gold)' }} />
                             <div style={{ width: 40, height: 3, borderRadius: 3, background: 'var(--color-gold)' }} />
@@ -135,17 +134,17 @@ function DemoOne() {
                     </motion.div>
 
                     {/* Intro */}
-                    <motion.p variants={fadeUp} custom={4} style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(0.95rem,1.8vw,1.1rem)', color: 'rgba(255,255,255,0.87)', lineHeight: 1.8, maxWidth: 640, margin: '0 0 2rem' }}>
+                    <motion.p variants={fadeUp} custom={4} className="mx-auto-mobile" style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(0.95rem,1.8vw,1.1rem)', color: 'rgba(255,255,255,0.87)', lineHeight: 1.8, maxWidth: 640, margin: '0 0 2rem' }}>
                         A career diplomat with over 25 years at the United Nations, PhD in Economics from Harvard, and former National Security Adviser — Dr. Khalilur Rahman now leads Bangladesh's foreign policy on the world stage.
                     </motion.p>
 
                     {/* Socials */}
-                    <motion.div variants={fadeUp} custom={5} style={{ display: 'flex', gap: '0.85rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
+                    <motion.div variants={fadeUp} custom={5} className="flex-center-mobile" style={{ display: 'flex', gap: '0.85rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
                         {socialLinks.map((soc, i) => <SocialBtn key={i} soc={soc} />)}
                     </motion.div>
 
                     {/* CTAs */}
-                    <motion.div variants={fadeUp} custom={6} style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                    <motion.div variants={fadeUp} custom={6} className="flex-center-mobile" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                         <Link to="/secretary" className="btn btn-gold" style={{ padding: '0.9rem 2.25rem', fontSize: '0.9rem' }}>Full Profile &amp; Biography</Link>
                         <Link to="/mission" className="btn btn-outline-white" style={{ padding: '0.9rem 2.25rem', fontSize: '0.9rem', backdropFilter: 'blur(8px)' }}>Our UN Mission</Link>
                     </motion.div>
@@ -157,7 +156,7 @@ function DemoOne() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                 >
-                    <div style={{ position: 'relative', borderRadius: 'var(--radius-2xl)', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.6)', border: '2px solid rgba(255,255,255,0.1)', aspectRatio: '3/4' }}>
+                    <div className="hero-img-container" style={{ position: 'relative', borderRadius: 'var(--radius-2xl)', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.6)', border: '2px solid rgba(255,255,255,0.1)', aspectRatio: '3/4' }}>
                         <img
                             src="/Dr. Khalilur Rahman.jpeg"
                             alt="Dr. Khalilur Rahman"
@@ -202,11 +201,11 @@ function DemoTwo() {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.12 } } }}
-                style={{ position: 'relative', zIndex: 3, width: '100%', maxWidth: 1200, margin: '0 auto', padding: '7rem 2rem 5rem', display: 'grid', gridTemplateColumns: 'minmax(260px, 400px) 1fr', gap: 'clamp(2.5rem,6vw,5rem)', alignItems: 'center' }}
+                className="hero-grid hero-grid-two hero-align-left"
             >
                 {/* Photo */}
                 <motion.div variants={fadeUp} custom={0}>
-                    <div style={{ position: 'relative', maxWidth: 400 }}>
+                    <div className="hero-img-container" style={{ position: 'relative', maxWidth: 400 }}>
                         {/* Decorative gold ring */}
                         <div style={{ position: 'absolute', inset: -12, borderRadius: 'calc(var(--radius-xl) + 12px)', border: '2px solid rgba(200,169,81,0.25)', zIndex: 0 }} />
                         <div style={{ position: 'absolute', inset: -6, borderRadius: 'calc(var(--radius-xl) + 6px)', border: '1px solid rgba(200,169,81,0.15)', zIndex: 0 }} />
@@ -240,7 +239,7 @@ function DemoTwo() {
                 {/* Bio content */}
                 <motion.div variants={fadeUp} custom={1} style={{ paddingTop: '2rem' }}>
                     {/* Ministry tag */}
-                    <motion.div variants={fadeUp} custom={2} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
+                    <motion.div variants={fadeUp} custom={2} className="flex-center-mobile" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
                         <img src="/logos/bd-govt.png" alt="" style={{ height: 36, width: 'auto', opacity: 0.9 }} />
                         <div>
                             <p style={{ margin: 0, fontFamily: 'var(--font-ui)', fontSize: '0.6rem', color: 'var(--color-gold)', textTransform: 'uppercase', letterSpacing: '0.2em', fontWeight: 700 }}>Ministry of Foreign Affairs</p>
@@ -248,16 +247,16 @@ function DemoTwo() {
                         </div>
                     </motion.div>
 
-                    <motion.h1 variants={fadeUp} custom={3} style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: 'white', fontWeight: 900, lineHeight: 1.08, margin: '0 0 0.5rem', textShadow: '0 4px 20px rgba(0,0,0,0.4)' }}>
+                    <motion.h1 variants={fadeUp} custom={3} className="hero-title" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.2rem,4.5vw,3.5rem)', color: 'white', fontWeight: 900, lineHeight: 1.08, margin: '0 0 0.5rem', textShadow: '0 4px 20px rgba(0,0,0,0.4)' }}>
                         Dr. Khalilur<br />Rahman
                     </motion.h1>
 
-                    <motion.div variants={fadeUp} custom={4} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', margin: '1rem 0 1.75rem' }}>
+                    <motion.div variants={fadeUp} custom={4} className="flex-center-mobile" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', margin: '1rem 0 1.75rem' }}>
                         <div style={{ width: 44, height: 3, background: 'var(--color-gold)' }} />
                         <span style={{ fontFamily: 'var(--font-ui)', fontSize: '0.82rem', color: 'var(--color-gold-light)', fontWeight: 600 }}>Sworn in · 17 February 2026</span>
                     </motion.div>
 
-                    <motion.div variants={fadeUp} custom={5} style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem', marginBottom: '2rem' }}>
+                    <motion.div variants={fadeUp} custom={5} className="hero-align-left mx-auto-mobile" style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem', marginBottom: '2rem' }}>
                         {[
                             `Dr. Khalilur Rahman was sworn in as Foreign Minister of Bangladesh on 17 February 2026. He previously served as National Security Adviser and High Representative for the Rohingya Issue.`,
                             `He joined diplomatic service in 1979, earning first place in Bangladesh's inaugural Civil Service exam. He studied at the Fletcher School (Tufts) and Kennedy School (Harvard), earning a PhD in Economics.`,
@@ -268,12 +267,12 @@ function DemoTwo() {
                     </motion.div>
 
                     {/* Socials */}
-                    <motion.div variants={fadeUp} custom={6} style={{ display: 'flex', gap: '0.75rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+                    <motion.div variants={fadeUp} custom={6} className="flex-center-mobile" style={{ display: 'flex', gap: '0.75rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
                         {socialLinks.map((soc, i) => <SocialBtn key={i} soc={soc} dark />)}
                     </motion.div>
 
                     {/* CTAs */}
-                    <motion.div variants={fadeUp} custom={7} style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                    <motion.div variants={fadeUp} custom={7} className="flex-center-mobile" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                         <Link to="/secretary" className="btn btn-gold" style={{ padding: '0.95rem 2.5rem', fontSize: '0.9rem' }}>Full Profile &amp; Biography</Link>
                         <Link to="/mission" className="btn btn-outline-white" style={{ padding: '0.95rem 2.5rem', fontSize: '0.9rem', backdropFilter: 'blur(6px)' }}>Our UN Mission</Link>
                     </motion.div>
