@@ -83,9 +83,9 @@ function SocialBtn({ soc, dark = false }) {
 ═══════════════════════════════════════════════════════════════ */
 function HeroSection() {
     return (
-        <section id="demo-one" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-primary-dark)' }}>
+        <section id="demo-one" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, var(--color-primary-dark) 0%, #00120a 100%)' }}>
             {/* Subtle BG texture container */}
-            <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("/Portal_Image_DN_73.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.08, zIndex: 0 }} />
+            <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("/Portal_Image_DN_73.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.04, zIndex: 0 }} />
 
             {/* Left side light effect */}
             <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '60%', background: 'radial-gradient(circle at 30% 50%, rgba(255,255,255,0.15) 0%, transparent 60%)', zIndex: 1 }} />
@@ -162,14 +162,20 @@ function HeroSection() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.3 }}
                 >
-                    <div className="hero-img-container" style={{ position: 'relative', borderRadius: 'var(--radius-2xl)', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.6)', border: '2px solid rgba(255,255,255,0.1)', aspectRatio: '3/4' }}>
-                        <img
-                            src="/Dr. Khalilur Rahman.jpeg"
-                            alt="Dr. Khalilur Rahman"
-                            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
-                            onError={e => { e.target.src = '/Khalilur_Rahman_(economist)_2025.jpg'; }}
-                        />
-                        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 40%)' }} />
+                    <div className="hero-img-container" style={{ position: 'relative', margin: '0 auto', maxWidth: '440px' }}>
+                        {/* Decorative gold rings */}
+                        <div style={{ position: 'absolute', inset: -15, borderRadius: 'calc(var(--radius-2xl) + 15px)', border: '2px solid rgba(200,169,81,0.25)', zIndex: 0 }} />
+                        <div style={{ position: 'absolute', inset: -7, borderRadius: 'calc(var(--radius-2xl) + 7px)', border: '1px solid rgba(200,169,81,0.12)', zIndex: 0 }} />
+
+                        <div style={{ position: 'relative', borderRadius: 'var(--radius-2xl)', overflow: 'hidden', boxShadow: '0 40px 80px rgba(0,0,0,0.8)', border: '2px solid rgba(200,169,81,0.3)', aspectRatio: '3/4', zIndex: 1, background: 'var(--color-navy)' }}>
+                            <img
+                                src="/Dr. Khalilur Rahman.jpeg"
+                                alt="Dr. Khalilur Rahman"
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
+                                onError={e => { e.target.src = '/Khalilur_Rahman_(economist)_2025.jpg'; }}
+                            />
+                            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 40%)' }} />
+                        </div>
                     </div>
                 </motion.div>
 
