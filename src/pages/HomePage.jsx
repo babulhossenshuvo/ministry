@@ -84,6 +84,9 @@ function SocialBtn({ soc, dark = false }) {
 function HeroSection() {
     return (
         <section id="demo-one" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-primary-dark)' }}>
+            {/* Subtle BG texture container */}
+            <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("/Portal_Image_DN_73.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.08, zIndex: 0 }} />
+
             {/* Left side light effect */}
             <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '60%', background: 'radial-gradient(circle at 30% 50%, rgba(255,255,255,0.15) 0%, transparent 60%)', zIndex: 1 }} />
 
