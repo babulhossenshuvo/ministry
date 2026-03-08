@@ -80,84 +80,98 @@ function SocialBtn({ soc, dark = false }) {
 ═══════════════════════════════════════════════════════════════ */
 function DemoOne() {
     return (
-        <section id="demo-one" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            {/* Full-screen BG */}
-            <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(/Portal_Image_DN_73.jpg)', backgroundSize: 'cover', backgroundPosition: 'center top', zIndex: 0 }} />
-            {/* Overlays */}
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.68) 0%,rgba(0,50,30,0.58) 45%,rgba(0,0,0,0.80) 100%)', zIndex: 1 }} />
-            <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, rgba(0,106,78,0.12) 0%, transparent 70%)', zIndex: 1 }} />
+        <section id="demo-one" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--color-primary-dark)' }}>
+            {/* Left side light effect */}
+            <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '60%', background: 'radial-gradient(circle at 30% 50%, rgba(255,255,255,0.15) 0%, transparent 60%)', zIndex: 1 }} />
+
+            {/* Right side background subtle */}
+            <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: '50%', background: 'linear-gradient(to right, transparent, rgba(0,0,0,0.4))', zIndex: 0 }} />
+
             {/* Gold side bars */}
             <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, background: 'linear-gradient(to bottom,transparent 5%,var(--color-gold) 40%,var(--color-gold) 60%,transparent 95%)', zIndex: 2, opacity: 0.85 }} />
-            <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 4, background: 'linear-gradient(to bottom,transparent 5%,var(--color-gold) 40%,var(--color-gold) 60%,transparent 95%)', zIndex: 2, opacity: 0.4 }} />
-
-            {/* Demo ONE badge */}
-            <div style={{ position: 'absolute', top: '110px', left: '50%', transform: 'translateX(-50%)', zIndex: 10, background: 'rgba(200,169,81,0.2)', border: '1px solid var(--color-gold)', borderRadius: 'var(--radius-full)', padding: '0.35rem 1.25rem', backdropFilter: 'blur(10px)' }}>
-                <span style={{ fontFamily: 'var(--font-ui)', fontSize: '0.65rem', color: 'var(--color-gold)', fontWeight: 700, letterSpacing: '0.2em', textTransform: 'uppercase' }}>◈ Cinematic Hero — Demo One</span>
-            </div>
 
             {/* CONTENT */}
-            <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.13 } } }}
-                style={{ position: 'relative', zIndex: 3, width: '100%', maxWidth: 960, padding: '9rem 2rem 6rem', textAlign: 'center' }}
-            >
-                {/* Logos */}
-                <motion.div variants={fadeUp} custom={0} style={{ display: 'flex', justifyContent: 'center', marginBottom: '2.75rem' }}>
-                    <div style={{ display: 'inline-flex', alignItems: 'center', gap: '1.25rem', padding: '0.7rem 1.5rem', background: 'rgba(255,255,255,0.07)', backdropFilter: 'blur(16px)', borderRadius: 'var(--radius-xl)', border: '1px solid rgba(200,169,81,0.3)', boxShadow: '0 8px 32px rgba(0,0,0,0.3)' }}>
-                        <img src="/logos/bd-govt.png" alt="Bangladesh Government" style={{ height: 46, width: 'auto' }} />
-                        <div style={{ width: 1, height: 30, background: 'rgba(255,255,255,0.2)' }} />
-                        <img src="/logos/Logo_of_the_United_Nations.svg" alt="United Nations" style={{ height: 42, width: 'auto' }} />
-                        <div style={{ width: 1, height: 30, background: 'rgba(255,255,255,0.2)' }} />
-                        <div style={{ textAlign: 'left' }}>
-                            <p style={{ margin: 0, fontFamily: 'var(--font-ui)', fontSize: '0.62rem', color: 'var(--color-gold-light)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.18em' }}>Ministry of Foreign Affairs</p>
-                            <p style={{ margin: 0, fontFamily: 'var(--font-ui)', fontSize: '0.75rem', color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>People's Republic of Bangladesh</p>
+            <div style={{ position: 'relative', zIndex: 3, width: '100%', maxWidth: 1200, padding: '8rem 2rem 5rem', display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) minmax(280px, 450px)', gap: '4rem', alignItems: 'center' }}>
+
+                {/* LEFT SIDE TEXT */}
+                <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.13 } } }}
+                    style={{ textAlign: 'left' }}
+                >
+                    {/* Logos */}
+                    <motion.div variants={fadeUp} custom={0} style={{ display: 'flex', marginBottom: '2rem' }}>
+                        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '1.25rem', padding: '0.7rem 1.5rem', background: 'rgba(255,255,255,0.07)', backdropFilter: 'blur(16px)', borderRadius: 'var(--radius-xl)', border: '1px solid rgba(200,169,81,0.3)', boxShadow: '0 8px 32px rgba(0,0,0,0.3)' }}>
+                            <img src="/logos/bd-govt.png" alt="Bangladesh Government" style={{ height: 46, width: 'auto' }} />
+                            <div style={{ width: 1, height: 30, background: 'rgba(255,255,255,0.2)' }} />
+                            <img src="/logos/Logo_of_the_United_Nations.svg" alt="United Nations" style={{ height: 42, width: 'auto' }} />
+                            <div style={{ width: 1, height: 30, background: 'rgba(255,255,255,0.2)' }} />
+                            <div>
+                                <p style={{ margin: 0, fontFamily: 'var(--font-ui)', fontSize: '0.62rem', color: 'var(--color-gold-light)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.18em' }}>Ministry of Foreign Affairs</p>
+                                <p style={{ margin: 0, fontFamily: 'var(--font-ui)', fontSize: '0.75rem', color: 'rgba(255,255,255,0.85)', fontWeight: 600 }}>People's Republic of Bangladesh</p>
+                            </div>
                         </div>
+                    </motion.div>
+
+                    {/* Heading */}
+                    <motion.h1 variants={fadeUp} custom={1} style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(3rem,6vw,5.5rem)', color: 'white', fontWeight: 900, lineHeight: 1.05, margin: '0 0 1rem', textShadow: '0 4px 40px rgba(0,0,0,0.6)', letterSpacing: '-0.02em' }}>
+                        Dr. Khalilur Rahman
+                    </motion.h1>
+
+                    {/* Gold divider */}
+                    <motion.div variants={fadeUp} custom={2} style={{ display: 'flex', alignItems: 'center', gap: '1rem', margin: '1.25rem 0' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+                            <div style={{ width: 5, height: 5, borderRadius: '50%', background: 'var(--color-gold)' }} />
+                            <div style={{ width: 40, height: 3, borderRadius: 3, background: 'var(--color-gold)' }} />
+                        </div>
+                    </motion.div>
+
+                    {/* Badge */}
+                    <motion.div variants={fadeUp} custom={3} style={{ marginBottom: '1.5rem' }}>
+                        <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'clamp(0.78rem,1.6vw,0.9rem)', color: 'var(--color-gold-light)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', background: 'rgba(200,169,81,0.12)', border: '1px solid rgba(200,169,81,0.35)', padding: '0.5rem 1.25rem', borderRadius: 'var(--radius-full)', backdropFilter: 'blur(8px)', display: 'inline-block' }}>
+                            Foreign Minister of Bangladesh · Sworn In 17 February 2026
+                        </span>
+                    </motion.div>
+
+                    {/* Intro */}
+                    <motion.p variants={fadeUp} custom={4} style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(0.95rem,1.8vw,1.1rem)', color: 'rgba(255,255,255,0.87)', lineHeight: 1.8, maxWidth: 640, margin: '0 0 2rem' }}>
+                        A career diplomat with over 25 years at the United Nations, PhD in Economics from Harvard, and former National Security Adviser — Dr. Khalilur Rahman now leads Bangladesh's foreign policy on the world stage.
+                    </motion.p>
+
+                    {/* Socials */}
+                    <motion.div variants={fadeUp} custom={5} style={{ display: 'flex', gap: '0.85rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
+                        {socialLinks.map((soc, i) => <SocialBtn key={i} soc={soc} />)}
+                    </motion.div>
+
+                    {/* CTAs */}
+                    <motion.div variants={fadeUp} custom={6} style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                        <Link to="/secretary" className="btn btn-gold" style={{ padding: '0.9rem 2.25rem', fontSize: '0.9rem' }}>Full Profile &amp; Biography</Link>
+                        <Link to="/mission" className="btn btn-outline-white" style={{ padding: '0.9rem 2.25rem', fontSize: '0.9rem', backdropFilter: 'blur(8px)' }}>Our UN Mission</Link>
+                    </motion.div>
+                </motion.div>
+
+                {/* RIGHT SIDE IMAGE */}
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.3 }}
+                >
+                    <div style={{ position: 'relative', borderRadius: 'var(--radius-2xl)', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.6)', border: '2px solid rgba(255,255,255,0.1)', aspectRatio: '3/4' }}>
+                        <img
+                            src="/Dr. Khalilur Rahman.jpeg"
+                            alt="Dr. Khalilur Rahman"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
+                            onError={e => { e.target.src = '/Khalilur_Rahman_(economist)_2025.jpg'; }}
+                        />
+                        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 40%)' }} />
                     </div>
                 </motion.div>
 
-                {/* Heading */}
-                <motion.h1 variants={fadeUp} custom={1} style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(3rem,8vw,6rem)', color: 'white', fontWeight: 900, lineHeight: 1.0, margin: '0 0 1rem', textShadow: '0 4px 40px rgba(0,0,0,0.6)', letterSpacing: '-0.02em' }}>
-                    Dr. Khalilur Rahman
-                </motion.h1>
-
-                {/* Gold divider */}
-                <motion.div variants={fadeUp} custom={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', margin: '1.25rem 0' }}>
-                    <div style={{ flex: 1, maxWidth: 120, height: 1, background: 'linear-gradient(to right, transparent, var(--color-gold))' }} />
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
-                        <div style={{ width: 5, height: 5, borderRadius: '50%', background: 'var(--color-gold)' }} />
-                        <div style={{ width: 28, height: 5, borderRadius: 3, background: 'var(--color-gold)' }} />
-                        <div style={{ width: 5, height: 5, borderRadius: '50%', background: 'var(--color-gold)' }} />
-                    </div>
-                    <div style={{ flex: 1, maxWidth: 120, height: 1, background: 'linear-gradient(to left, transparent, var(--color-gold))' }} />
-                </motion.div>
-
-                {/* Badge */}
-                <motion.div variants={fadeUp} custom={3} style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
-                    <span style={{ fontFamily: 'var(--font-ui)', fontSize: 'clamp(0.78rem,1.6vw,1rem)', color: 'var(--color-gold-light)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', background: 'rgba(200,169,81,0.12)', border: '1px solid rgba(200,169,81,0.35)', padding: '0.5rem 1.75rem', borderRadius: 'var(--radius-full)', backdropFilter: 'blur(8px)' }}>
-                        Foreign Minister of Bangladesh · Sworn In 17 February 2026
-                    </span>
-                </motion.div>
-
-                {/* Intro */}
-                <motion.p variants={fadeUp} custom={4} style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(0.95rem,1.8vw,1.15rem)', color: 'rgba(255,255,255,0.87)', lineHeight: 1.88, maxWidth: 740, margin: '0 auto 2.5rem' }}>
-                    A career diplomat with over 25 years at the United Nations, PhD in Economics from Harvard, and former National Security Adviser — Dr. Khalilur Rahman now leads Bangladesh's foreign policy on the world stage.
-                </motion.p>
-
-                {/* Socials */}
-                <motion.div variants={fadeUp} custom={5} style={{ display: 'flex', justifyContent: 'center', gap: '0.85rem', marginBottom: '2.75rem', flexWrap: 'wrap' }}>
-                    {socialLinks.map((soc, i) => <SocialBtn key={i} soc={soc} />)}
-                </motion.div>
-
-                {/* CTAs */}
-                <motion.div variants={fadeUp} custom={6} style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                    <Link to="/secretary" className="btn btn-gold" style={{ padding: '1rem 2.75rem', fontSize: '0.92rem' }}>Full Profile &amp; Biography</Link>
-                    <Link to="/mission" className="btn btn-outline-white" style={{ padding: '1rem 2.75rem', fontSize: '0.92rem', backdropFilter: 'blur(8px)' }}>Our UN Mission</Link>
-                </motion.div>
-            </motion.div>
+            </div>
 
             {/* Scroll */}
-            <motion.div style={{ position: 'absolute', bottom: '2.5rem', left: '50%', transform: 'translateX(-50%)', color: 'rgba(255,255,255,0.45)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.3rem', zIndex: 3 }}
+            <motion.div style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)', color: 'rgba(255,255,255,0.45)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.3rem', zIndex: 3 }}
                 animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
                 <span style={{ fontFamily: 'var(--font-ui)', fontSize: '0.58rem', letterSpacing: '0.25em', textTransform: 'uppercase' }}>Scroll</span>
                 <ChevronDown size={22} />

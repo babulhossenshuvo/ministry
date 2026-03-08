@@ -68,9 +68,9 @@ export default function AboutPage() {
                     }}
                     frameBorder="0"
                 />
-                
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 100%)', zIndex: 1 }} />
-                
+
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.7) 100%)', zIndex: 1 }} />
+
                 <div style={{ position: 'relative', zIndex: 2, maxWidth: '1280px', width: '100%', margin: '0 auto', textAlign: 'center' }}>
                     <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white', fontWeight: 800, margin: 0, textShadow: '0 4px 20px rgba(0,0,0,0.8)' }}>
                         {t('about.page_title')}
@@ -99,18 +99,28 @@ export default function AboutPage() {
                                 </tbody>
                             </table>
                         </div>
-                        {/* Description */}
-                        <div>
-                            {/* PLACEHOLDER — Replace before production */}
-                            <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--color-text-secondary)', lineHeight: 1.85, marginBottom: '1.5rem' }}>
-                                The People's Republic of Bangladesh, located in South Asia at the head of the Bay of Bengal, is one of the world's most densely populated nations and a rising power in the developing world. Since gaining independence on December 16, 1971, Bangladesh has made remarkable strides in economic development, poverty reduction, and human development, emerging as a model for the developing world.
-                            </p>
-                            <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--color-text-secondary)', lineHeight: 1.85, marginBottom: '1.5rem' }}>
-                                Bangladesh has transitioned from being one of the poorest countries in the world to a lower-middle income country, achieving remarkable gains in health, education, and gender equality. The country is on track for graduation from the United Nations' Least Developed Countries category by 2026.
-                            </p>
-                            <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--color-text-secondary)', lineHeight: 1.85 }}>
-                                Despite being among the most climate-vulnerable nations on earth, Bangladesh has emerged as a global leader in climate adaptation and resilience. Bangladesh's vibrant democracy, dynamic civil society, and resilient people continue to drive the country's remarkable developmental transformation.
-                            </p>
+                        {/* Description & Shorts Animation */}
+                        <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+                            <div style={{ flex: 1, minWidth: '300px' }}>
+                                {/* PLACEHOLDER — Replace before production */}
+                                <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--color-text-secondary)', lineHeight: 1.85, marginBottom: '1.5rem' }}>
+                                    The People's Republic of Bangladesh, located in South Asia at the head of the Bay of Bengal, is one of the world's most densely populated nations and a rising power in the developing world. Since gaining independence on December 16, 1971, Bangladesh has made remarkable strides in economic development, poverty reduction, and human development, emerging as a model for the developing world.
+                                </p>
+                                <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--color-text-secondary)', lineHeight: 1.85, marginBottom: '1.5rem' }}>
+                                    Bangladesh has transitioned from being one of the poorest countries in the world to a lower-middle income country, achieving remarkable gains in health, education, and gender equality. The country is on track for graduation from the United Nations' Least Developed Countries category by 2026.
+                                </p>
+                                <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--color-text-secondary)', lineHeight: 1.85 }}>
+                                    Despite being among the most climate-vulnerable nations on earth, Bangladesh has emerged as a global leader in climate adaptation and resilience. Bangladesh's vibrant democracy, dynamic civil society, and resilient people continue to drive the country's remarkable developmental transformation.
+                                </p>
+                            </div>
+                            {/* Animation / Shorts Embedded */}
+                            <div style={{ width: '240px', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', flexShrink: 0 }}>
+                                <iframe
+                                    src="https://www.youtube.com/embed/XdCynE_EAhI?autoplay=1&mute=1&controls=0&loop=1&playlist=XdCynE_EAhI&showinfo=0&rel=0&playsinline=1"
+                                    allow="autoplay; encrypted-media"
+                                    style={{ width: '240px', height: '426px', border: 'none', pointerEvents: 'none' }}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

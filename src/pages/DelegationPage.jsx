@@ -36,7 +36,24 @@ export default function DelegationPage() {
                 position: 'relative',
                 overflow: 'hidden'
             }}>
-                <div className="hero-pattern" style={{ position: 'absolute', inset: 0, opacity: 0.15 }} />
+                <iframe
+                    src="https://www.youtube.com/embed/To7HyoTkF5c?autoplay=1&mute=1&controls=0&loop=1&playlist=To7HyoTkF5c&showinfo=0&rel=0&playsinline=1"
+                    allow="autoplay; encrypted-media"
+                    style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        width: '100vw',
+                        height: '100vw',
+                        minHeight: '100vh',
+                        transform: 'translate(-50%, -50%)',
+                        pointerEvents: 'none',
+                        zIndex: 0,
+                        opacity: 0.8
+                    }}
+                    frameBorder="0"
+                />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.6) 100%)', zIndex: 1 }} />
                 <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
                     <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', color: 'white', fontWeight: 800, margin: '0 0 1rem', textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
                         {t('delegation.page_title')}

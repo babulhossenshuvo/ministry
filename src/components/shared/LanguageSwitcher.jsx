@@ -41,7 +41,7 @@ export default function LanguageSwitcher() {
                     fontFamily: 'var(--font-ui)',
                     fontWeight: 600,
                     fontSize: '0.78rem',
-                    color: 'var(--color-text-primary)',
+                    color: '#ffffff',
                     transition: 'border-color 0.2s',
                 }}
             >

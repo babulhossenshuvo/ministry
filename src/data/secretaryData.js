@@ -12,11 +12,11 @@ export const secretaryData = {
     youtube: "https://www.youtube.com/@MoFABangladesh",
     biography: [
         "Dr. Khalilur Rahman was sworn in as the Foreign Minister of Government of Bangladesh on 17 February 2026. He previously served as National Security Adviser and High Representative for the Rohingya Issue in the Interim Government of Bangladesh.",
-        "Dr. Rahman joined diplomatic service of Bangladesh in 1979 upon securing the first position in the first regular Bangladesh Civil Service examination held in 1977. In the same year, he stood first class first in MA examinations in Economics at the Dhaka University. During 1980-83, he studied at the Fletcher School of Law and Diplomacy, Tufts University and the Kennedy School of Government, Harvard University, and earned the degrees of MA in Law and Diplomacy, and PhD in Economics.",
+        "Dr. Rahman joined diplomatic service of Bangladesh in 1979 upon securing the first position in the first regular Bangladesh Civil Service examination held in 1977. In the same year, he stood first class first in MA examinations in Economics at the Dhaka University. During 198O-83, he studied at the Fletcher School of Law and Diplomacy, Tufts University and the Kennedy School of Government, Harvard University, and earned the degrees of MA in Law and Diplomacy, and PhD in Economics.",
         "During 1983-1991, he served at the Ministry of Foreign Affairs and at the Permanent Mission of Bangladesh to the United Nations in New York. He represented Bangladesh at the Economic and Financial Committee of the UN General Assembly. He was also the spokesperson of the Least Developed Countries (LDCs) and aide to the President of the 41st session of the UN General Assembly.",
         "Dr. Rahman joined the United Nations secretariat in 1991 as Special Adviser at the UN Conference on Trade and Development (UNCTAD) in Geneva. During the ensuing 25 years at the UN, he held senior positions in the United Nations in New York and Geneva, and was a lead author of and substantive contributor to major UN flagship publications.",
         "Dr. Rahman is a founder of the East West University in Dhaka and served as a member on its Board of Trustees until November 2024 when he was appointed as the High Representative on the Rohingya Issue, and subsequently as National Security Adviser.",
-        "He is married and has two daughters and four grandchildren.",
+        "He is married and has two daughters and four grandchildren."
     ],
     vision: [
         {

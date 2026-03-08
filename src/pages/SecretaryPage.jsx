@@ -346,7 +346,7 @@ export default function SecretaryPage() {
             {/* Section 4 — Achievements */}
             < section className="section-padding" style={{ background: 'var(--color-ivory-dark)' }}>
                 <div className="container-main">
-                    <SectionHeader title={t('secretary.achievements_heading')} subtitle="Impact" centered />
+                    <SectionHeader title={t('secretary.achievements_heading')} subtitle="Achievement Claim" centered />
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
                         {secretaryData.achievements.map((ach, i) => (
                             <motion.div
