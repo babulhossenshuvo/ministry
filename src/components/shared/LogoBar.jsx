@@ -3,7 +3,7 @@ import React from 'react';
 export default function LogoBar() {
     const logos = [
         { src: '/logos/bd-govt.png', alt: 'Government of Bangladesh National Emblem' },
-        { src: '/logos/Logo_of_the_United_Nations.svg', alt: 'United Nations' },
+        { src: '/UN.png', alt: 'United Nations' },
         { src: '/logos/bd-govt.png', alt: 'Bangladesh Permanent Mission to the UN' },
     ];
 

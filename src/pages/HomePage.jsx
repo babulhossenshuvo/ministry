@@ -107,7 +107,7 @@ function HeroSection() {
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '1.25rem', padding: '0.7rem 1.5rem', background: 'rgba(255,255,255,0.07)', backdropFilter: 'blur(16px)', borderRadius: 'var(--radius-xl)', border: '1px solid rgba(200,169,81,0.3)', boxShadow: '0 8px 32px rgba(0,0,0,0.3)' }}>
                             <img src="/logos/bd-govt.png" alt="Bangladesh Government" style={{ height: 46, width: 'auto' }} />
                             <div style={{ width: 1, height: 30, background: 'rgba(255,255,255,0.2)' }} />
-                            <img src="/logos/Logo_of_the_United_Nations.svg" alt="United Nations" style={{ height: 42, width: 'auto' }} />
+                            <img src="/UN.png" alt="United Nations" style={{ height: 42, width: 'auto' }} />
                             <div style={{ width: 1, height: 30, background: 'rgba(255,255,255,0.2)' }} />
                             <div>
                                 <p style={{ margin: 0, fontFamily: 'var(--font-ui)', fontSize: '0.62rem', color: 'var(--color-gold-light)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.18em' }}>Ministry of Foreign Affairs</p>
@@ -161,7 +161,7 @@ function HeroSection() {
                 >
                     <div className="hero-img-container" style={{ position: 'relative', borderRadius: 'var(--radius-2xl)', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.6)', border: '2px solid rgba(255,255,255,0.1)', aspectRatio: '3/4' }}>
                         <img
-                            src="/Dr. Khalilur Rahman.jpeg"
+                            src="/UN at Dr.webp"
                             alt="Dr. Khalilur Rahman"
                             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
                             onError={e => { e.target.src = '/Khalilur_Rahman_(economist)_2025.jpg'; }}
@@ -332,9 +332,10 @@ export default function HomePage() {
             </section>
 
             {/* ══════════════ PEACEKEEPING STATS BANNER ══════════════ */}
-            <section style={{ background: 'var(--color-primary)', padding: '5rem 1.5rem', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', inset: 0, backgroundImage: 'repeating-linear-gradient(90deg, rgba(200,169,81,0.04) 0px, rgba(200,169,81,0.04) 2px, transparent 2px, transparent 40px)', pointerEvents: 'none' }} />
-                <div className="container-main" style={{ position: 'relative', zIndex: 1 }}>
+            <section style={{ background: 'var(--color-primary-dark)', padding: '5rem 1.5rem', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("/army Un.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.15 }} />
+                <div style={{ position: 'absolute', inset: 0, backgroundImage: 'repeating-linear-gradient(90deg, rgba(200,169,81,0.04) 0px, rgba(200,169,81,0.04) 2px, transparent 2px, transparent 40px)', pointerEvents: 'none', zIndex: 1 }} />
+                <div className="container-main" style={{ position: 'relative', zIndex: 2 }}>
                     <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
                         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                             <span style={{ fontFamily: 'var(--font-ui)', fontWeight: 700, fontSize: '0.75rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--color-gold)', display: 'block', marginBottom: '1rem' }}>UN Peacekeeping</span>

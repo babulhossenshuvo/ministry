@@ -73,7 +73,7 @@ export default function SecretaryPage() {
                                     position: 'relative'
                                 }}>
                                     <img
-                                        src="/Dr. Khalilur Rahman.jpeg"
+                                        src="/UN at Dr.webp"
                                         alt="Dr. Khalilur Rahman, Foreign Minister of Bangladesh"
                                         style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
                                         onError={(e) => { e.target.src = '/Khalilur_Rahman_(economist)_2025.jpg'; }}
@@ -101,7 +101,7 @@ export default function SecretaryPage() {
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                                             <img src="/logos/bd-govt.png" alt="BD" style={{ height: '28px', width: 'auto' }} />
                                             <div style={{ width: '1px', height: '18px', background: 'rgba(255,255,255,0.2)' }} />
-                                            <img src="/logos/Logo_of_the_United_Nations.svg" alt="UN" style={{ height: '22px', width: 'auto' }} />
+                                            <img src="/UN.png" alt="UN" style={{ height: '22px', width: 'auto' }} />
                                         </div>
                                     </div>
                                 </div>

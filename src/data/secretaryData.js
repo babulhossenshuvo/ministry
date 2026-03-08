@@ -5,7 +5,7 @@ export const secretaryData = {
     ministry: "Ministry of Foreign Affairs",
     country: "People's Republic of Bangladesh",
     appointmentDate: "17 February 2026",
-    photo: "/Dr. Khalilur Rahman.jpeg",
+    photo: "/UN at Dr.webp",
     linkedin: "https://www.linkedin.com/in/khalilur-rahman",
     twitter: "https://twitter.com/mofa_bangladesh",
     facebook: "https://www.facebook.com/mofabangladesh",

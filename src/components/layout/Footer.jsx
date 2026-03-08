@@ -17,7 +17,7 @@ export default function Footer() {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                         <img src="/logos/bd-govt.png" alt="Bangladesh" style={{ height: '48px', width: 'auto' }} />
                         <div style={{ width: '1px', height: '32px', background: 'rgba(255,255,255,0.2)' }} />
-                        <img src="/logos/Logo_of_the_United_Nations.svg" alt="United Nations" style={{ height: '44px', width: 'auto' }} />
+                        <img src="/UN.png" alt="United Nations" style={{ height: '44px', width: 'auto' }} />
                     </div>
                 </div>
             </div>
