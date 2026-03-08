@@ -470,11 +470,13 @@ h6 {
         gap: 4rem;
         padding-top: 10rem;
     }
+
     .hero-grid-two {
         grid-template-columns: minmax(350px, 420px) 1fr;
         gap: 5rem;
         padding-top: 10rem;
     }
+
     .hero-align-left {
         text-align: left;
     }
@@ -482,22 +484,36 @@ h6 {
 
 @media (max-width: 1023px) {
     .hero-grid {
+        display: flex;
+        flex-direction: column-reverse;
         text-align: center;
-        padding-top: 7rem;
+        padding-top: 6.5rem;
+        gap: 2.5rem;
     }
+
+    .hero-grid>div {
+        width: 100%;
+    }
+
     .flex-center-mobile {
         justify-content: center !important;
     }
+
     .mx-auto-mobile {
         margin-left: auto !important;
         margin-right: auto !important;
     }
+
     .hero-img-container {
-        max-width: 400px;
+        max-width: 320px;
+        /* Better proportion for vertical mobile screens */
         margin: 0 auto;
+        /* Slight down-scale for mobile padding to fit the screen better */
+        transform: scale(0.95);
     }
+
     /* Reduce hero text sizes for mobile */
     .hero-title {
-        font-size: clamp(2.5rem, 8vw, 3.5rem) !important;
+        font-size: clamp(2.3rem, 10vw, 3rem) !important;
     }
 }
