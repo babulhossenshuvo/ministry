@@ -102,7 +102,7 @@ export default function AboutPage() {
                             </table>
                         </div>
                         {/* Description & Shorts Animation */}
-                        <div style={{ display: 'flex', gap: '2.5rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+                        <div style={{ display: 'flex', gap: '2.5rem', flexWrap: 'wrap', flexDirection: 'column-reverse' }} className="flex-lg-row">
                             <div style={{ flex: '1 1 300px' }}>
                                 {/* PLACEHOLDER — Replace before production */}
                                 <p style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', color: 'var(--color-text-secondary)', lineHeight: 1.85, marginBottom: '1.5rem' }}>
@@ -115,13 +115,15 @@ export default function AboutPage() {
                                     Despite being among the most climate-vulnerable nations on earth, Bangladesh has emerged as a global leader in climate adaptation and resilience. Bangladesh's vibrant democracy, dynamic civil society, and resilient people continue to drive the country's remarkable developmental transformation.
                                 </p>
                             </div>
-                            {/* Animation / Shorts Embedded */}
-                            <div style={{ width: '100%', maxWidth: '280px', margin: '0 auto', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)', flexShrink: 0, aspectRatio: '9/16' }}>
-                                <iframe
-                                    src="https://www.youtube.com/embed/XdCynE_EAhI?autoplay=1&mute=1&controls=0&loop=1&playlist=XdCynE_EAhI&showinfo=0&rel=0&playsinline=1"
-                                    allow="autoplay; encrypted-media"
-                                    style={{ width: '100%', height: '100%', border: 'none', pointerEvents: 'none' }}
-                                />
+                            {/* Animation / Shorts Embedded Responsive */}
+                            <div style={{ flex: '1 1 100%', maxWidth: '280px', margin: '0 auto', borderRadius: 'var(--radius-xl)', overflow: 'hidden', boxShadow: 'var(--shadow-xl)' }}>
+                                <div style={{ position: 'relative', width: '100%', paddingTop: '177.77%', background: '#000' }}>
+                                    <iframe
+                                        src="https://www.youtube.com/embed/XdCynE_EAhI?autoplay=1&mute=1&controls=0&loop=1&playlist=XdCynE_EAhI&showinfo=0&rel=0&playsinline=1"
+                                        allow="autoplay; encrypted-media"
+                                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', pointerEvents: 'none' }}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
